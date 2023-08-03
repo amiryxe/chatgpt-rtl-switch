@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT RTL Switch",
+  "version": "1.0",
+  "description": "Converts chat messages to RTL using bdi tags.",
+  "action": {},
+  "permissions": ["storage", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js",
+    "matches": ["*://chat.openai.com/*"]
+  }
+}
