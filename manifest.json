@@ -3,7 +3,18 @@
   "name": "ChatGPT RTL Switch",
   "version": "1.0",
   "description": "Converts chat messages to RTL using bdi tags.",
-  "action": {},
+  "action": {
+    "default_icon": {
+      "16": "images/icon-off.png",
+      "48": "images/icon-off.png",
+      "128": "images/icon-off.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon-off.png",
+    "48": "images/icon-off.png",
+    "128": "images/icon-off.png"
+  },
   "permissions": ["storage", "activeTab", "scripting"],
   "background": {
     "service_worker": "background.js",
