@@ -5,15 +5,15 @@
   "description": "Converts chat messages to RTL using bdi tags.",
   "action": {
     "default_icon": {
-      "16": "images/icon-on.png",
-      "48": "images/icon-on.png",
-      "128": "images/icon-on.png"
+      "16": "images/icon-off.png",
+      "48": "images/icon-off.png",
+      "128": "images/icon-off.png"
     }
   },
   "icons": {
-    "16": "images/icon-off.png",
-    "48": "images/icon-off.png",
-    "128": "images/icon-off.png"
+    "16": "images/icon-on.png",
+    "48": "images/icon-on.png",
+    "128": "images/icon-on.png"
   },
   "permissions": ["storage", "activeTab", "scripting"],
   "background": {
