@@ -1,17 +1,5 @@
-function updateIcon(rtlEnabled) {
-    const iconPath = rtlEnabled ? 'on' : 'off';
-    console.log(iconPath)
 
-    chrome.action.setIcon({
-        path: {
-            "16": `images/icon-${iconPath}.png`,
-            "48": `images/icon-${iconPath}.png`,
-            "128": `images/icon-${iconPath}.png`
-        }
-    });
-
-}
-
+chrome.action.setBadgeText({ text: 'OFF' });
 function convertToRTL() {
     const paragraphs = document.querySelectorAll('p');
 
@@ -41,16 +29,8 @@ chrome.action.onClicked.addListener(tab => {
             args: [rtlEnabled]
         });
 
-        // chrome.scripting.executeScript({
-        //     target: { tabId: tab.id },
-        //     function: updateIcon,
-        //     args: [rtlEnabled]
-        // });
-
-
+        chrome.action.setBadgeText({ text: rtlEnabled ? 'ON' : 'OFF' });
     });
-
-
 });
 
 
